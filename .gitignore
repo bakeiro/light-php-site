@@ -1,0 +1,18 @@
+# Editors
+/.idea/*
+/.vscode/*
+
+# Frontend
+/src/view/www/.cache/*
+
+# Config
+config.php
+php.ini
+composer.lock
+
+# Libraries
+/system/composer/vendor/*
+/src/view/www/node_modules/*
+
+# Dinamic folder
+/system/writable/*
