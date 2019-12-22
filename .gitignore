@@ -16,3 +16,4 @@ composer.lock
 
 # Dinamic folder
 /system/writable/*
+/system/temp_folder/*

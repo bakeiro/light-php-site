@@ -16,4 +16,4 @@ rename("system/temp_folder/Light-PHP-1.7/.editorconfig", ".editorconfig");
 rename("system/temp_folder/Light-PHP-1.7/post-install.php", "post-install.php");
 rename("system/temp_folder/Light-PHP-1.7/.github", ".github");
 
-unlink("system/temp_folder/");
+unlink("system/temp_folder/Light-PHP-1.7/");
