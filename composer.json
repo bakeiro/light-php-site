@@ -2,19 +2,9 @@
     "name": "bakeiro/light-php-site",
     "type": "project",
     "license": "MIT",
-    "description": "A really simple MVC PHP framework to start building awesome apps right away",
-    "minimum-stability": "stable",
+    "description": "Sample demo using light-php",
     "config": {
         "vendor-dir": "./system/composer/vendor/"
-    },
-    "require": {
-        "php": "^7.0"
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "php -r \"require_once('./post-install.php'); \"",
-            "php -r \"unlink('./post-install.php'); \""
-        ]
     },
     "authors": [
         {
@@ -24,14 +14,18 @@
             "role": "Developer"
         }
     ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "php -r \"require_once('./get-source-code.php'); \"",
+            "php -r \"require_once('./post-install.php'); \"",
+            "php -r \"unlink('./post-install.php'); \""
+        ]
+    },
     "require": {
-        "bakeiro/micro_php_template_engine": "dev-master",
+        "php": "^7.0"
+    },
+    "require-dev": {
         "filp/whoops": "^2.3",
         "sunra/dbug": "^0.2.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "light\\": "src/"
-        }
     }
 }
