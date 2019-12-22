@@ -1,5 +1,5 @@
 {
-    "name": "bakeiro/light-php",
+    "name": "bakeiro/light-php-site",
     "type": "project",
     "license": "MIT",
     "description": "A really simple MVC PHP framework to start building awesome apps right away",
