@@ -18,7 +18,9 @@
         "post-create-project-cmd": [
             "php -r \"require_once('./get-source-code.php'); \"",
             "php -r \"require_once('./post-install.php'); \"",
-            "php -r \"unlink('./post-install.php'); \""
+            "php -r \"unlink('./post-install.php'); \"",
+            "php -r \"unlink('./light-php.zip'); \"",
+            "php -r \"unlink('./get-source-code.php'); \""            
         ]
     },
     "require": {
