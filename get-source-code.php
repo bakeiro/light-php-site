@@ -21,10 +21,11 @@ file_put_contents('./.editorconfig', $editorconfig_code);
 $htaccess_code = $zip_obj->getFromName("Light-PHP-1.7/.htaccess");
 file_put_contents('./.htaccess', $htaccess_code);
 
+$post_install_code = $zip_obj->getFromName("Light-PHP-1.7/post-install.php");
+file_put_contents('./post-install.php', $post_install_code);
+
+
+
 /*
 rename("system/temp_folder/Light-PHP-1.7/system/engine", "system/engine");
-rename("system/temp_folder/Light-PHP-1.7/post-install.php", "post-install.php");
-rename("system/temp_folder/Light-PHP-1.7/.github", ".github");
-
-unlink("system/temp_folder/Light-PHP-1.7/");
 */
