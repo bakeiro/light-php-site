@@ -26,7 +26,7 @@ $post_install_code = $zip_obj->getFromName("Light-PHP-1.7/post-install.php");
 file_put_contents('./post-install.php', $post_install_code);
 
 $route_code = $zip_obj->getFromName("Light-PHP-1.7/system/routes.php");
-file_put_contents('./system/routes.php', $routes_code);
+file_put_contents('./system/routes.php', $route_code);
 
 $startup_code = $zip_obj->getFromName("Light-PHP-1.7/system/startup.php");
 file_put_contents('./system/startup.php', $startup_code);
