@@ -28,8 +28,8 @@ file_put_contents('./post-install.php', $post_install_code);
 $route_code = $zip_obj->getFromName("Light-PHP-1.7/system/routes.php");
 file_put_contents('./system/routes.php', $routes_code);
 
-$startup_code = $zip_obj->getFromName("Light-PHP-1.7/system/startUp.php");
-file_put_contents('./system/startUp.php', $startup_code);
+$startup_code = $zip_obj->getFromName("Light-PHP-1.7/system/startup.php");
+file_put_contents('./system/startup.php', $startup_code);
 
 // engine files
 $post_install_code = $zip_obj->getFromName("Light-PHP-1.7/system/engine/Autoloader.php");
