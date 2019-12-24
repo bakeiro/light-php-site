@@ -1,6 +1,6 @@
 <?php
 
-class indexController extends SecController
+class indexController  
 {
     public function index()
     {

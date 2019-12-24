@@ -1,5 +1,5 @@
 <?php
-class customerModel extends SecModel
+class customerModel
 {
 
     public function getCustomer($email)

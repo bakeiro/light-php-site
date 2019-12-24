@@ -1,5 +1,5 @@
 <?php
-class productModel extends SecModel
+class productModel
 {
     public function getAllProducts()
     {

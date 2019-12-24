@@ -1,6 +1,6 @@
 <?php
 
-class productController extends SecController
+class productController  
 {
     public function getProdPage($page = 0)
     {
