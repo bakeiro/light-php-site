@@ -2,7 +2,6 @@
 
 class userModel
 {
-
     public function checkLogin($user_email, $input_pass)
     {
         //Already escaped! see Util::cleanInput();
