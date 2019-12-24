@@ -40,6 +40,3 @@ if (!Session::get("admin_logged")) {
 
 //Execute controller
 $Controller->execController();
-
-//End script
-$Controller->endExecution();
