@@ -20,7 +20,8 @@
             "php -r \"require_once('./post-install.php'); \"",
             "php -r \"unlink('./post-install.php'); \"",
             "php -r \"unlink('./light-php.zip'); \"",
-            "php -r \"unlink('./get-source-code.php'); \""            
+            "php -r \"unlink('./get-source-code.php'); \"",
+            "php -r \"echo 'Remember to import the database.sql file!'; \""
         ]
     },
     "require": {
