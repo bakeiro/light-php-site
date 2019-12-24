@@ -1,5 +1,7 @@
 <?php
 
+namespace Controller;
+
 class indexController  
 {
     public function index()

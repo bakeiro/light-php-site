@@ -1,9 +1,15 @@
 <?php
+
+namespace Controller;
+
+use Model\productModel;
+use Model\customerModel;
+
 class customerController  
 {
     public function info()
     {
-        require MODEL . 'customer/customerModel.php';
+        //require MODEL . 'customer/customerModel.php';
         $customer_model = new customerModel();
 
         $customer_info = $customer_model->getCustomerById(Session::get("customer_id"));
@@ -28,7 +34,7 @@ class customerController
         $email_post = $_POST['email'];
         $pass_post = $_POST['pass'];
 
-        require MODEL . 'customer/customerModel.php';
+        //require MODEL . 'customer/customerModel.php';
         $customer_model = new customerModel();
         $customer = $customer_model->checkLogin($email_post, $pass_post, "customer");
 

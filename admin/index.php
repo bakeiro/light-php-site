@@ -11,7 +11,7 @@ define("VIEW", DIR_ROOT . "/admin/view/");
 require SYSTEM . "engine/Config.php";
 require DIR_ROOT . "/config.php";
 
-//Engine
+// Engine
 require SYSTEM . "engine/Router.php";
 require SYSTEM . "engine/Controller.php";
 require SYSTEM . "engine/Session.php";
@@ -21,8 +21,7 @@ require SYSTEM . "engine/Output.php";
 require SYSTEM . "engine/Database.php";
 require SYSTEM . "engine/Util.php";
 require SYSTEM . "engine/Errors.php";
-require SYSTEM . "engine/SecModel.php";
-require SYSTEM . "engine/SecController.php";
+require SYSTEM . "engine/Autoloader.php";
 
 //Startup
 require SYSTEM . "startup.php";

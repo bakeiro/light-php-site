@@ -1,5 +1,9 @@
 <?php
 
+namespace Controller;
+
+use Model\productModel;
+
 class productController  
 {
     public function getProdPage($page = 0)
@@ -7,7 +11,6 @@ class productController
         $results_per_page = 4;
         $offset = $page * $results_per_page;
 
-        require MODEL . "product/productModel.php";
         $product_model = new productModel();
 
         $products = array();
@@ -18,7 +21,6 @@ class productController
 
     public function getProdInfo($prod_id)
     {
-        require MODEL . "product/productModel.php";
         $product_model = new productModel();
 
         $products = array();

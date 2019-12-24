@@ -1,4 +1,7 @@
 <?php
+
+namespace Model;
+
 class productModel
 {
     public function getAllProducts()

@@ -1,5 +1,7 @@
 <?php
 
+namespace Controller;
+
 class restController  
 {
     public function index()
