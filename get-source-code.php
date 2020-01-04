@@ -1,5 +1,7 @@
 <?php
 
+// use new code instead:
+// https://github.com/bakeiro/Light-PHP/archive/1.8.zip
 $source_code = file_get_contents('https://github.com/bakeiro/Light-PHP/archive/1.7.zip');
 file_put_contents('./light-php.zip', $source_code);
 
