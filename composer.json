@@ -1,34 +1,34 @@
 {
-    "name": "bakeiro/light-php-site",
-    "type": "project",
-    "license": "MIT",
-    "description": "Sample demo using light-php",
-    "config": {
-        "vendor-dir": "./system/composer/vendor/"
-    },
-    "authors": [
-        {
-            "name": "David Baqueiro Santerbas",
-            "email": "davidbaqueiro@outlook.com",
-            "homepage": "http://davidbaqueiro.com",
-            "role": "Developer"
-        }
-    ],
-    "scripts": {
-        "post-create-project-cmd": [
-            "php -r \"require_once('./get-source-code.php'); \"",
-            "php -r \"require_once('./post-install.php'); \"",
-            "php -r \"unlink('./post-install.php'); \"",
-            "php -r \"unlink('./light-php.zip'); \"",
-            "php -r \"unlink('./get-source-code.php'); \"",
-            "php -r \"echo 'Remember to import the database.sql file!'; \""
-        ]
-    },
-    "require": {
-        "php": "^7.0"
-    },
-    "require-dev": {
-        "filp/whoops": "^2.3",
-        "sunra/dbug": "^0.2.1"
+  "name": "bakeiro/light-php-site",
+  "type": "project",
+  "license": "MIT",
+  "description": "Sample demo using light-php",
+  "config": {
+    "vendor-dir": "./system/composer/vendor/"
+  },
+  "authors": [
+    {
+      "name": "David Baqueiro Santerbas",
+      "email": "davidbaqueiro@outlook.com",
+      "homepage": "http://davidbaqueiro.com",
+      "role": "Developer"
     }
+  ],
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"require_once('./get-source-code.php'); \"",
+      "php -r \"require_once('./post-install.php'); \"",
+      "php -r \"unlink('./post-install.php'); \"",
+      "php -r \"unlink('./light-php.zip'); \"",
+      "php -r \"unlink('./get-source-code.php'); \"",
+      "php -r \"echo 'Remember to import the database.sql file!'; \""
+    ]
+  },
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.3",
+    "sunra/dbug": "^0.2.1"
+  }
 }
