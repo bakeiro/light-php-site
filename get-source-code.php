@@ -43,7 +43,6 @@ file_put_contents('./system/engine/Controller.php', $post_install_code);
 $post_install_code = $zip_obj->getFromName("Light-PHP-1.8/system/engine/Errors.php");
 file_put_contents('./system/engine/Errors.php', $post_install_code);
 
-
 $post_install_code = $zip_obj->getFromName("Light-PHP-1.8/system/engine/Router.php");
 file_put_contents('./system/engine/Router.php', $post_install_code);
 
