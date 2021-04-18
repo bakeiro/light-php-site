@@ -18,18 +18,14 @@ $zip_obj = new ZipArchive();
 $zip_obj->open("light-php.zip");
 
 // Root
-$file_path = "/";
+$file_path = "./";
 $files = [".editorconfig", ".gitignore", ".htaccess", "package-lock.json", "package.json", "post-install.php"];
 foreach($files as $file) {
   $temp_file = $zip_obj->getFromName("Light-PHP-" . $source_code_version . $file_path . $file . ".php");
-  file_put_contents("./" . $file_path .$file . ".php", $temp_file);  
+  file_put_contents($file_path .$file . ".php", $temp_file);  
 }
 
 // System
-$route_code = $zip_obj->getFromName("Light-PHP-".$source_code_version."/system/logs/.gitkeep");
-file_put_contents("./system/logs/.gitkeep", $route_code);
-
-// Logs
 $startup_code = $zip_obj->getFromName("Light-PHP-".$source_code_version."/system/bootstrap.php");
 file_put_contents("./system/bootstrap.php", $startup_code);
 
@@ -38,7 +34,7 @@ $file_path = "/system/config/";
 $files = ["config", "environment", "ini.php", "routes"];
 foreach($files as $file) {
   $temp_file = $zip_obj->getFromName("Light-PHP-" . $source_code_version . $file_path . $file . ".php");
-  file_put_contents("./" . $file_path .$file . ".php", $temp_file);  
+  file_put_contents("." . $file_path .$file . ".php", $temp_file);  
 }
 
 // Engine
