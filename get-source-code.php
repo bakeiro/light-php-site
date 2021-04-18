@@ -35,7 +35,7 @@ file_put_contents("./system/bootstrap.php", $startup_code);
 
 // Config
 $file_path = "/system/config/";
-$files = ["config", "environment", "ini.php", "routes"];
+$files = ["config", "environment", "ini", "routes"];
 foreach($files as $file) {
   $temp_file = $zip_obj->getFromName("Light-PHP-" . $source_code_version . $file_path . $file . ".php");
   file_put_contents("." . $file_path .$file . ".php", $temp_file);
