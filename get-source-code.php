@@ -25,7 +25,7 @@ $zip_obj->open("light-php.zip");
 $file_path = "./";
 $files = [".editorconfig", ".gitignore", ".htaccess", "package-lock.json", "package.json", "post-install.php"];
 foreach($files as $file) {
-  $temp_file = $zip_obj->getFromName("Light-PHP-" . $source_code_version . $file_path . $file . ".php");
+  $temp_file = $zip_obj->getFromName("Light-PHP-" . $source_code_version . $file_path . $file);
   file_put_contents($file_path .$file . ".php", $temp_file);
 }
 
